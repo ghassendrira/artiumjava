@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?> <!-- Ajout de l'importation pour Insets -->
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.QuizManagementController">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+
+    <Label fx:id="courseLabel" text="Cours : " />
+
+    <GridPane hgap="10" vgap="5">
+        <Label text="Titre du quiz :" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="titleField" promptText="Entrez le titre" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    </GridPane>
+
+    <HBox spacing="10">
+        <Button onAction="#ajouterQuiz" text="Ajouter quiz" />
+        <Button onAction="#openQuestionManagement" text="Gérer questions" />
+    </HBox>
+
+    <TableView fx:id="quizTable">
+        <columns>
+            <TableColumn fx:id="colTitle" text="Titre" />
+        </columns>
+    </TableView>
+</VBox>

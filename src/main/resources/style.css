@@ -1,0 +1,33 @@
+/* Style pour le titre */
+.title-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-font-family: "Arial";
+}
+
+/* Style pour le TreeView */
+.category-tree {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+}
+
+/* Style pour les éléments du TreeView */
+.category-tree .tree-cell {
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-padding: 5;
+}
+
+/* Style pour les éléments sélectionnés */
+.category-tree .tree-cell:selected {
+    -fx-background-color: #0078d7;
+    -fx-text-fill: white;
+}
+
+/* Style pour les flèches de dépliage */
+.category-tree .arrow {
+    -fx-background-color: #666666;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?> <!-- Ajout de l'importation pour Insets -->
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.QuestionManagementController">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+
+    <Label fx:id="quizLabel" text="Quiz : " />
+
+    <GridPane hgap="10" vgap="5">
+        <Label text="Question :" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="questionTextField" promptText="Entrez la question" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <Label text="Réponse :" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="answerTextField" promptText="Entrez la réponse" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <CheckBox fx:id="isCorrectCheckBox" text="Correcte ?" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    </GridPane>
+
+    <Button onAction="#ajouterQuestionEtReponse" text="Ajouter question et réponse" />
+
+    <TableView fx:id="questionTable">
+        <columns>
+            <TableColumn fx:id="colQuestion" text="Question" />
+            <TableColumn fx:id="colAnswers" text="Réponses" />
+        </columns>
+    </TableView>
+</VBox>

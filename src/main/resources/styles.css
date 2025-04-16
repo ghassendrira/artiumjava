@@ -1,0 +1,203 @@
+/* Style global pour le VBox principal */
+.main-vbox {
+    -fx-background-color: #f4f4f9;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+/* Style pour le label de la catégorie */
+.category-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-font-family: "Arial";
+}
+
+/* Style pour le GridPane du formulaire */
+.form-grid {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+}
+
+/* Style pour les labels du formulaire */
+.form-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+    -fx-font-family: "Arial";
+}
+
+/* Style pour les champs de texte du formulaire */
+.form-textfield {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-font-size: 14px;
+    -fx-padding: 5;
+}
+
+/* Style pour le bouton de sélection de fichier */
+.action-button {
+    -fx-background-color: #4a90e2;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5 10 5 10;
+}
+
+/* Style pour le label du fichier sélectionné */
+.file-label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #666666;
+    -fx-font-family: "Arial";
+}
+
+/* Style pour le conteneur des boutons CRUD */
+.button-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+}
+
+/* Style générique pour les boutons CRUD */
+.crud-button {
+    -fx-font-size: 14px;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 8;
+    -fx-cursor: hand;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-max-width: 40px;
+    -fx-max-height: 40px;
+}
+
+/* Style spécifique pour chaque bouton CRUD */
+.clear-button {
+    -fx-background-color: #ff6b6b;
+}
+
+.save-button {
+    -fx-background-color: #4a90e2;
+}
+
+.modify-button {
+    -fx-background-color: #f5a623;
+}
+
+.quiz-button {
+    -fx-background-color: #2ecc71;
+}
+
+.delete-button {
+    -fx-background-color: #e74c3c;
+}
+
+/* Style pour les icônes */
+.icon-clear {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-family: "Arial";
+    -fx-content: "\u2715"; /* Symbole "X" pour "Nouveau" (réinitialiser) */
+}
+
+.icon-save {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-family: "Arial";
+    -fx-content: "\u2714"; /* Symbole "Check" pour "Sauvegarder" */
+}
+
+.icon-modify {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-family: "Arial";
+    -fx-content: "\u270E"; /* Symbole "Crayon" pour "Modifier" */
+}
+
+.icon-quiz {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-family: "Arial";
+    -fx-content: "\u2753"; /* Symbole "Point d'interrogation" pour "Gérer les quiz" */
+}
+
+.icon-delete {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-family: "Arial";
+    -fx-content: "\u2716"; /* Symbole "Croix" pour "Supprimer" */
+}
+
+/* Style pour le conteneur de la barre de recherche */
+.search-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 8;
+}
+
+/* Style pour le label de recherche */
+.search-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+    -fx-font-family: "Arial";
+}
+
+/* Style pour le champ de recherche */
+.search-field {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-font-size: 14px;
+    -fx-padding: 5;
+    -fx-pref-width: 200px;
+}
+
+/* Style pour le TableView */
+.course-table {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+/* Style pour les colonnes du tableau */
+.course-table .column-header {
+    -fx-background-color: #4a90e2;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-border-color: #e0e0e0;
+}
+
+/* Style pour les cellules du tableau */
+.course-table .table-cell {
+    -fx-font-size: 13px;
+    -fx-text-fill: #333333;
+    -fx-font-family: "Arial";
+    -fx-border-color: #e0e0e0;
+    -fx-alignment: CENTER_LEFT;
+}
+
+/* Style pour les lignes sélectionnées */
+.course-table .table-row-cell:selected {
+    -fx-background-color: #0078d7;
+    -fx-text-fill: white;
+}

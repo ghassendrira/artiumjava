@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<?import java.net.URL?>
+<VBox alignment="CENTER" spacing="20" styleClass="main-vbox" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CourseManagementController">
+    <!-- Marges autour du conteneur -->
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <!-- Label pour afficher la catégorie sélectionnée -->
+    <Label fx:id="categoryLabel" text="Catégorie : " styleClass="category-label" />
+
+    <!-- Formulaire pour ajouter/modifier un cours -->
+    <GridPane alignment="CENTER" hgap="12" vgap="10" styleClass="form-grid">
+        <Label text="Titre :" GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="form-label" />
+        <TextField fx:id="titleField" promptText="Entrez le titre" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="form-textfield" />
+
+        <Label text="Description :" GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="form-label" />
+        <TextField fx:id="descriptionField" promptText="Entrez la description" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="form-textfield" />
+
+        <Label text="Fichier :" GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="form-label" />
+        <HBox GridPane.columnIndex="1" GridPane.rowIndex="2" spacing="12">
+            <Button onAction="#selectFile" text="Sélectionner fichier" styleClass="action-button" />
+            <Label fx:id="fileLabel" text="Aucun fichier sélectionné" styleClass="file-label" />
+        </HBox>
+        <columnConstraints>
+            <ColumnConstraints percentWidth="30" />
+            <ColumnConstraints percentWidth="70" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+    </GridPane>
+
+    <!-- Boutons CRUD -->
+    <HBox alignment="CENTER" spacing="15" styleClass="button-box">
+        <Button onAction="#clearFields" text="Nouveau" styleClass="crud-button clear-button">
+            <Label styleClass="icon-clear" /></Button>
+        <Button onAction="#ajouterCourse" text="Sauvegarder" styleClass="crud-button save-button" />
+        <Button onAction="#modifierCourse" text="Modifier" styleClass="crud-button modify-button" />
+        <Button onAction="#openQuizManagement" text="Gérer les quiz" styleClass="crud-button quiz-button" />
+        <Button onAction="#supprimerCourse" text="Supprimer" styleClass="crud-button delete-button" />
+    </HBox>
+
+    <!-- Barre de recherche -->
+    <HBox alignment="CENTER" spacing="10" styleClass="search-box">
+        <Label text="Rechercher :" styleClass="search-label" />
+        <TextField fx:id="searchField" onAction="#searchCourses" promptText="Rechercher..." styleClass="search-field" />
+    </HBox>
+
+    <!-- Tableau des cours -->
+    <TableView fx:id="courseTable" styleClass="course-table">
+        <columns>
+            <TableColumn fx:id="colTitle" text="Titre" styleClass="table-column" />
+            <TableColumn fx:id="colDescription" text="Description" styleClass="table-column" />
+            <TableColumn fx:id="colFilePath" text="Fichier" styleClass="table-column" />
+        </columns>
+    </TableView>
+
+    <!-- Inclusion du fichier CSS -->
+    <stylesheets>
+        <URL value="@/styles.css" />
+    </stylesheets>
+</VBox>
