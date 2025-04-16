@@ -1,0 +1,152 @@
+/* Root VBox */
+VBox {
+    -fx-background-color: #f0f2f5;
+    -fx-padding: 10px;
+}
+
+/* Header */
+.header-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1877f2;
+    -fx-padding: 0 0 10px 0;
+}
+
+/* Create Post Box */
+.create-post-box {
+    -fx-background-color: #ffffff;
+    -fx-padding: 12px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.3, 0, 0);
+}
+
+/* Input Fields */
+.input-field {
+    -fx-font-size: 14px;
+    -fx-background-color: #f5f5f5;
+    -fx-border-radius: 5px;
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 1px;
+    -fx-padding: 8px;
+}
+
+.input-field:focused {
+    -fx-border-color: #1877f2;
+    -fx-background-color: #ffffff;
+}
+
+/* Action Button (Photo Upload) */
+.action-button {
+    -fx-background-color: #e4e6eb;
+    -fx-text-fill: #606770;
+    -fx-font-size: 12px;
+    -fx-padding: 5px 10px;
+    -fx-border-radius: 5px;
+}
+
+.action-button:hover {
+    -fx-background-color: #d8dade;
+}
+
+/* Post Button */
+.post-button {
+    -fx-background-color: #1877f2;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-border-radius: 5px;
+}
+
+.post-button:hover {
+    -fx-background-color: #166fe5;
+}
+
+/* ScrollPane for Feed */
+.feed-scroll {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* Posts Container */
+.posts-container {
+    -fx-background-color: transparent;
+    -fx-padding: 0 10px;
+}
+
+/* Individual Post */
+.post-box {
+    -fx-background-color: #ffffff;
+    -fx-padding: 12px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.3, 0, 0);
+}
+
+/* Post Header (Title, Timestamp) */
+.post-header {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.post-timestamp {
+    -fx-font-size: 12px;
+    -fx-text-fill: #606770;
+}
+
+/* Post Content */
+.post-content {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+    -fx-padding: 5px 0;
+}
+
+/* Post Image */
+.post-image {
+    -fx-border-radius: 5px;
+}
+
+/* Interaction Buttons (Like, Comment, Edit, Delete) */
+.interaction-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #606770;
+    -fx-font-size: 12px;
+    -fx-padding: 5px 10px;
+}
+
+.interaction-button:hover {
+    -fx-background-color: #e4e6eb;
+}
+
+/* Comments Section */
+.comments-box {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 8px;
+    -fx-border-radius: 5px;
+}
+
+.comment-input {
+    -fx-font-size: 12px;
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 20px;
+    -fx-padding: 8px;
+}
+
+.comment-button {
+    -fx-background-color: #1877f2;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 5px 10px;
+    -fx-border-radius: 20px;
+}
+
+.comment-button:hover {
+    -fx-background-color: #166fe5;
+}
+
+.comment-text {
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+    -fx-padding: 5px 0;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="10" alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PostController">
+
+    <!-- Header -->
+    <Label text="Mini Social" styleClass="header-label"/>
+
+    <!-- Create Post Form -->
+    <VBox spacing="8" styleClass="create-post-box">
+        <TextField fx:id="titleField" promptText="Titre du post" styleClass="input-field"/>
+        <TextArea fx:id="contentField" promptText="Quoi de neuf ?" styleClass="input-field" prefHeight="80"/>
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <Button fx:id="uploadImageButton" text="Photo" onAction="#uploadImage" styleClass="action-button"/>
+            <ImageView fx:id="imageView" fitWidth="50" fitHeight="50" preserveRatio="true"/>
+        </HBox>
+        <Button text="Publier" onAction="#ajouterPost" styleClass="post-button"/>
+    </VBox>
+
+    <!-- Posts Feed -->
+    <ScrollPane fitToWidth="true" prefHeight="400" styleClass="feed-scroll">
+        <VBox fx:id="postsContainer" spacing="10" styleClass="posts-container">
+            <!-- Posts will be dynamically added here by PostController -->
+        </VBox>
+    </ScrollPane>
+
+</VBox>
